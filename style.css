@@ -1,0 +1,394 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Oswald', sans-serif; 
+   
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    
+}
+
+.bandenav{
+    grid-column: span 12;
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.logo{
+    padding-left: 30px;
+}
+
+
+.bandenav .texte1{
+    padding: 50px;
+    font-size: 18px;
+    color: white;
+    text-align:left;
+}
+
+.box1{
+    background-image: url(image/raisting-1010862_1920.jpg);
+    grid-column: span 12;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }  
+
+.citation{
+    color: white;
+    padding-top: 100px;
+    font-size: 60px;
+    padding-left: 35%;
+    padding-right: 100px;
+    
+}
+
+label{
+    float:right;
+    padding: 30px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 150px;
+    z-index: 1100;
+    
+}
+
+
+#toggle {
+    
+    display: none;
+  
+    
+}
+
+/* fond*/
+
+.navigation{
+    
+    display: block;
+    position: fixed;
+    left:0;
+    top:150px;
+     background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 20%;
+    height: 100%;
+    transition: all .8s;
+    overflow: hidden;
+    width: 0;
+    z-index: 1000;
+}
+
+
+.navigation ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+.navigation ul li{
+    padding: 25px;
+    padding-top: 30px;
+    border-bottom: solid #fff 1.5px;
+    
+    
+
+}
+
+.navigation ul li a{
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size:20px;
+    letter-spacing: 0.30em;
+    white-space: nowrap
+    
+}
+
+.navigation ul li a:hover {
+    color: #d86e31;
+   
+}
+
+
+#toggle:checked + .navigation{
+
+    width: 100%;
+    z-index: 99
+}
+
+
+.nav > label:nth-child(1){
+    z-index: 500;
+}
+
+.box2{
+    grid-column: span 12;
+    background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #c37d3e, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #c37d3e, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte{
+    color: white;
+    font-size:25px;
+    text-align: center;
+}
+
+.boxtitre{
+    display: flex;
+    justify-content: center;
+    grid-column: span 12;
+    background-color: #395566;
+    height: 50px;
+    align-items: center;
+}
+
+.boxtitre h1{
+    color: white;
+   font-size: 40px;
+}
+
+
+.box4{
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.IDENTITE{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.IDENTITE li a{
+    color:black;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #e78619;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+
+.IDENTITE li a:hover {
+    background-color: #395566;
+    color:#fff;
+    border-color: #395566 ;
+   }
+
+.bande{
+    grid-column: span 12;
+    background-color: #e78619;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px;
+}
+
+.bande:hover {
+    background-color:  #395566;
+    text-decoration: none;
+   }
+
+.bande li{
+    list-style:none;
+}
+
+.bande li a{
+    color: #fff;
+    letter-spacing: 0.3em;
+    font-size: 60px;
+    
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+  
+}
+
+
+
+
+
+ .boxflex{
+       display: flex;
+    }
+
+.carousel{
+    padding: 70px;
+    justify-content: center;
+}
+
+.footerpage{
+     display: flex;
+     color:#fff;
+     height: 80px;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.footerpage p{
+    padding: 15px;
+}
+
+
+footer{
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+
+#toggle:checked + .navigation{
+
+    width: 100%;
+    z-index: 99
+}   
+    
+.head .texte1{
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+    text-align:left;
+}
+    
+.boxtitre h1{
+    color: white;
+   font-size: 30px;
+    letter-spacing: 0.3em;
+}
+
+    
+.bande li a{
+    color: #fff;
+    letter-spacing: 0.5em;
+    font-size: 40px;
+
+}
+
+
+.box1{
+    background-image: url(image/raisting-1010862_1920.jpg);
+    grid-column: span 12;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+
+ .citation{
+    font-size: 50px;
+
+    
+} 
+    
+
+.texte{
+    color: white;
+    font-size:20px;
+    text-align: center;
+}
+
+   

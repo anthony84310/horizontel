@@ -1,0 +1,287 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Oswald', sans-serif;
+   
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    
+}
+
+.bandenav{
+    grid-column: span 12;
+     background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.logo{
+    padding-left: 30px;
+}
+
+
+.bandenav .texte1{
+    padding: 50px;
+    font-size: 18px;
+    color: white;
+    text-align:left;
+}
+
+.citation{
+    color: white;
+    padding-top: 100px;
+    font-size: 60px;
+    padding-left: 35%;
+    padding-right: 100px;
+    
+}
+
+label{
+    float:right;
+    padding: 30px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 150px;
+    z-index: 1100;
+    
+}
+
+
+#toggle {
+    
+    display: none;
+  
+    
+}
+
+/* fond*/
+
+.navigation{
+    
+    display: block;
+    position: fixed;
+    left:0;
+    top:150px;
+     background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 20%;
+    height: 100%;
+    transition: all .8s;
+    overflow: hidden;
+    width: 0;
+    z-index: 1000;
+}
+
+
+.navigation ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+    
+}
+
+.navigation ul li{
+    padding: 25px;
+    padding-top: 30px;
+    border-bottom: solid #fff 1.5px;
+    
+    
+
+}
+
+.navigation ul li a{
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size:20px;
+    letter-spacing: 0.30em;
+    white-space: nowrap
+    
+}
+
+
+.navigation ul li a:hover {
+    color: #d86e31;
+    text-decoration: none;
+   
+}
+
+
+#toggle:checked + .navigation{
+
+    width: 100%;
+    z-index: 99
+}
+
+
+.nav > label:nth-child(1){
+    z-index: 500;
+}
+
+
+.card-header {
+    padding: 3vh;
+    font-size: 55px;
+    letter-spacing: 0.5em;
+    font-weight: bolder;
+    display: flex;
+    
+}
+
+.btn-link {
+     color: white;
+    font-weight: 600;
+    
+   
+}
+
+.btn-link:hover {
+    color:  #e78619;
+    text-decoration: none;
+   
+}
+
+.titre{
+    color: white;
+    top:300px;
+    font-size: 50px;
+    position: relative;
+    text-align: right;
+    padding-right: 50px;
+    letter-spacing: 0.5em;
+    
+}
+
+.card-body {
+    font-size:20px;
+    text-align: center;
+    background-image: url(image/slc_cover_img_7.jpg);
+}
+
+.texteboite{
+    color:#fff;
+}
+
+.logo2{
+    padding-bottom: 20px;
+}
+
+
+.btn btn-link collapsed{
+    justify-content: center;
+    
+}
+
+.fondun{
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fonddeux{
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.fondtrois{
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footerpage{
+     display: flex;
+     color:#fff;
+     height: 80px;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.footerpage p{
+    padding: 15px;
+}
+
+
+footer{
+    position: fixed;
+    bottom:0px;
+    position: relative;
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #395566); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #395566); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.boxtitre{
+    padding-top:200px;
+    height: 300px;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    
+}
